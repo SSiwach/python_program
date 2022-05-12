@@ -9,3 +9,11 @@ def N(x):
     return 0.0
 
 N(10) 
+def Nv(x):
+  r = np.where(x<0, 0.0, 0.0)
+  r = np.where(0<=x<1,x,r)
+  r = np.where(1 <= 2, 2-x,r)
+  r = np.where(x>=2,0.0,r)
+  return r
+
+Nv(2)
